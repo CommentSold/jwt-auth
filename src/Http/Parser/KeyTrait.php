@@ -16,7 +16,7 @@ trait KeyTrait
     /**
      * The key.
      */
-    protected string $key = 'token';
+    protected $key = 'token';
 
     /**
      * Set the key.

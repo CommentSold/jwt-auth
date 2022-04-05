@@ -49,22 +49,22 @@ class JWTGuard implements Guard
     /**
      * The JWT instance.
      */
-    protected JWT $jwt;
+    protected $jwt;
 
     /**
      * The request instance.
      */
-    protected Request $request;
+    protected $request;
 
     /**
      * The flag to use the Laravel Responsable interface.
      */
-    protected bool $useResponsable = true;
+    protected $useResponsable = true;
 
     /**
      * The Dispatcher instance.
      */
-    protected Dispatcher $events;
+    protected $events;
 
     /**
      * Constructor.

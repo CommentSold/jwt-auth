@@ -534,7 +534,7 @@ class JWTGuardTest extends AbstractTestCase
     /** @test */
     public function it_should_be_macroable()
     {
-        $this->guard->macro('foo', fn () => 'bar');
+        $this->guard->macro('foo', function () { return 'bar'; });
 
         $this->assertEquals('bar', $this->guard->foo());
     }

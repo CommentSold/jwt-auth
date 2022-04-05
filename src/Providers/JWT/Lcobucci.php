@@ -27,17 +27,17 @@ class Lcobucci extends Provider
     /**
      * The Builder instance.
      */
-    protected Builder $builder;
+    protected $builder;
 
     /**
      * The Parser instance.
      */
-    protected Parser $parser;
+    protected $parser;
 
     /**
      * The Signer instance.
      */
-    protected Signer $signer;
+    protected $signer;
 
     /**
      * Constructor.
@@ -117,7 +117,7 @@ class Lcobucci extends Provider
         }
 
         return Collection::make($jwt->getClaims())
-            ->map(fn ($claim) => is_object($claim) ? $claim->getValue() : $claim)
+            ->map(function ($claim) { return is_object($claim) ? $claim->getValue() : $claim; })
             ->toArray();
     }
 

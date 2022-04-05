@@ -29,12 +29,12 @@ trait DatetimeTrait
     /**
      * Time leeway in seconds.
      */
-    protected int $leeway = 0;
+    protected $leeway = 0;
 
     /**
      * Max refresh period in minutes.
      */
-    protected ?int $maxRefreshPeriod = null;
+    protected $maxRefreshPeriod = null;
 
     /**
      * Set the claim value, and call a validate method.

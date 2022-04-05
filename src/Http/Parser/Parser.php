@@ -20,12 +20,12 @@ class Parser
     /**
      * The request.
      */
-    protected Request $request;
+    protected $request;
 
     /**
      * The chain.
      */
-    private array $chain;
+    private $chain;
 
     /**
      * Constructor.

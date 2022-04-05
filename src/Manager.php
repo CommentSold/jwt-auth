@@ -26,22 +26,22 @@ class Manager
     /**
      * The provider.
      */
-    protected JWTContract $provider;
+    protected $provider;
 
     /**
      * The blacklist.
      */
-    protected Blacklist $blacklist;
+    protected $blacklist;
 
     /**
      * The payload builder.
      */
-    protected Builder $builder;
+    protected $builder;
 
     /**
      * The blacklist flag.
      */
-    protected bool $blacklistEnabled = true;
+    protected $blacklistEnabled = true;
 
     /**
      * Constructor.

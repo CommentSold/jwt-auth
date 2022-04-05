@@ -27,7 +27,7 @@ class PayloadValidator extends Validator
      */
     public static function check(Collection $claims, ?Options $options = null): Payload
     {
-        $options ??= new Options();
+        $options = $options ?? new Options();
 
         if (! static::hasRequiredClaims($claims, $options)) {
             static::throwFailed('JWT does not contain the required claims');

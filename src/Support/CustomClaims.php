@@ -18,7 +18,7 @@ trait CustomClaims
     /**
      * Custom claims.
      */
-    protected array $customClaims = [];
+    protected $customClaims = [];
 
     /**
      * Set the custom claims.

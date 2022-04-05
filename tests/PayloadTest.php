@@ -50,15 +50,14 @@ class PayloadTest extends AbstractTestCase
      */
     private function getTestPayload(array $extraClaims = [])
     {
-        $claims = [
+        $claims = array_merge([
             new Subject(1),
             new Issuer('http://example.com'),
             new Expiration($this->testNowTimestamp + 3600),
             new NotBefore($this->testNowTimestamp),
             new IssuedAt($this->testNowTimestamp),
             new JwtId('foo'),
-            ...$extraClaims,
-        ];
+        ], $extraClaims);
 
         $collection = Collection::make($claims);
 

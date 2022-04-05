@@ -29,22 +29,22 @@ class JWT
     /**
      * The payload builder.
      */
-    protected Builder $builder;
+    protected $builder;
 
     /**
      * The authentication manager.
      */
-    protected Manager $manager;
+    protected $manager;
 
     /**
      * The HTTP parser.
      */
-    protected Parser $parser;
+    protected $parser;
 
     /**
      * The token.
      */
-    protected ?Token $token = null;
+    protected $token = null;
 
     /**
      * JWT constructor.
@@ -176,7 +176,7 @@ class JWT
      */
     public function checkSubjectModel($model, ?Payload $payload = null): bool
     {
-        $payload ??= $this->payload();
+        $payload = $payload ?? $this->payload();
 
         if (! $hash = $payload->get(HashedSubject::NAME)) {
             return true;

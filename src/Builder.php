@@ -25,37 +25,37 @@ class Builder
     /**
      * The request.
      */
-    protected Request $request;
+    protected $request;
 
     /**
      * The TTL in minutes.
      */
-    protected int $ttl = 30;
+    protected $ttl = 30;
 
     /**
      * Lock the subject.
      */
-    protected bool $lockSubject = true;
+    protected $lockSubject = true;
 
     /**
      * Time leeway in seconds.
      */
-    protected int $leeway = 0;
+    protected $leeway = 0;
 
     /**
      * Max refresh period in minutes.
      */
-    protected ?int $maxRefreshPeriod = null;
+    protected $maxRefreshPeriod = null;
 
     /**
      * The required claims.
      */
-    protected array $requiredClaims = [];
+    protected $requiredClaims = [];
 
     /**
      * The default claims to add.
      */
-    protected array $defaultClaims = [
+    protected $defaultClaims = [
         Claims\IssuedAt::NAME,
         Claims\JwtId::NAME,
         Claims\Issuer::NAME,
@@ -64,7 +64,7 @@ class Builder
     /**
      * Any custom validators.
      */
-    protected array $customValidators = [];
+    protected $customValidators = [];
 
     /**
      * Constructor.

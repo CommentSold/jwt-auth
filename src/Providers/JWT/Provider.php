@@ -25,17 +25,17 @@ abstract class Provider implements JWT
     /**
      * The secret.
      */
-    protected string $secret;
+    protected $secret;
 
     /**
      * The array of keys.
      */
-    protected array $keys;
+    protected $keys;
 
     /**
      * The used algorithm.
      */
-    protected string $algo;
+    protected $algo;
 
     /**
      * Constructor.

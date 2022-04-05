@@ -37,7 +37,7 @@ class WebToken extends Provider
     /**
      * Algorithms that this provider supports.
      */
-    protected array $algorithms = [
+    protected $algorithms = [
         'HS256' => Algorithms\HS256::class,
         'HS384' => Algorithms\HS384::class,
         'HS512' => Algorithms\HS512::class,

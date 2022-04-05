@@ -25,17 +25,17 @@ class TokenResponse implements Responsable
     /**
      * The token itself.
      */
-    protected Token $token;
+    protected $token;
 
     /**
      * The token ttl.
      */
-    protected int $ttl;
+    protected $ttl;
 
     /**
      * The token type.
      */
-    protected string $type;
+    protected $type;
 
     /**
      * Constructor.

@@ -21,7 +21,7 @@ class Token
     /**
      * The token value.
      */
-    private string $value;
+    private $value;
 
     /**
      * Create a new JSON Web Token.

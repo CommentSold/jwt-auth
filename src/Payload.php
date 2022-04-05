@@ -34,7 +34,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
     /**
      * The collection of claims.
      */
-    private Collection $claims;
+    private $claims;
 
     /**
      * Constructor.

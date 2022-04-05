@@ -25,17 +25,17 @@ class Blacklist
     /**
      * The storage.
      */
-    protected Storage $storage;
+    protected $storage;
 
     /**
      * The grace period when a token is blacklisted. In seconds.
      */
-    protected int $gracePeriod = 0;
+    protected $gracePeriod = 0;
 
     /**
      * The unique key held within the blacklist.
      */
-    protected string $key = JwtId::NAME;
+    protected $key = JwtId::NAME;
 
     /**
      * The value to store when blacklisting forever.

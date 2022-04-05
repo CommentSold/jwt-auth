@@ -40,7 +40,7 @@ final class Options
     /**
      * The provided options.
      */
-    protected array $options = [];
+    protected $options = [];
 
     /**
      * Options constructor.

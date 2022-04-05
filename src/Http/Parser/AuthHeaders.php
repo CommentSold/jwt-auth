@@ -19,12 +19,12 @@ class AuthHeaders implements ParserContract
     /**
      * The header name.
      */
-    protected string $header = 'authorization';
+    protected $header = 'authorization';
 
     /**
      * The header prefix.
      */
-    protected string $prefix = 'bearer';
+    protected $prefix = 'bearer';
 
     /**
      * Try to parse the token from the request header.
