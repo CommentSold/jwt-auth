@@ -24,8 +24,7 @@
     ],
     "require": {
         "php": "^7.3",
-        "illuminate/contracts": "^6|^7|^8",
-        "illuminate/http": "^6|^7|^8",
+        "illuminate/contracts": "^8",
         "lcobucci/jwt": "^3.2",
         "nesbot/carbon": "^2.0",
         "web-token/jwt-checker": "^2.1",
@@ -41,6 +40,7 @@
         "illuminate/console": "^6|^7|^8",
         "illuminate/database": "^6|^7|^8",
         "illuminate/routing": "^6|^7|^8",
+        "illuminate/http": "^8",
         "mockery/mockery": "^1.0",
         "phpunit/phpunit": "^8.0"
     },
